@@ -8,13 +8,13 @@ client.on("ready", () => {
 
 client.on("message", msg => {
   if (msg.content === "!주인님") {
-    msg.reply("김재선");
+    msg.reply("재선님 부르셨나요 ");
   }
 });
 
 client.on("message", msg => {
   if (msg.content === "!세바스찬") {
-    msg.reply("최재혁-24세 : 왈-왈");
+    msg.reply("최재혁(수드라/24세) : 왈-왈-");
   }
 });
 
