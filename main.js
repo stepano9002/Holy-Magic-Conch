@@ -17,5 +17,5 @@ client.on("message", msg => {
     msg.channel.send({ files: ["./images/" + imageNumber + ".png"] });
   }
 });
-
+//토큰숨기기
 client.login(process.env.DISCORD_TOKEN);
