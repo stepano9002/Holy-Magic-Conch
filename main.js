@@ -7,6 +7,18 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
+  if (msg.content === "!주인님") {
+    msg.reply("김재선");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "!세바스찬") {
+    msg.reply("최재혁-24세");
+  }
+});
+
+client.on("message", msg => {
   if (msg.author === client.user) {
     return;
   }
