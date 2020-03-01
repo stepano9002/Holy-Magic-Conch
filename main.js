@@ -6,8 +6,14 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-  if (msg.content === "ping") {
-    msg.reply("Pong!");
+  if (msg.author === client.user) {
+    return;
+  }
+  if (msg.content.indexOf(`${process.env.prefix}`) != -1) {
+    msg.channel.send(msg.author.toString() + ":" + msg.content);
+
+    imageNumber = Math.floor(Math.random() * 2) + 1;
+    msg.channel.send({ files: ["./images/" + imageNumber + ".png"] });
   }
 });
 
