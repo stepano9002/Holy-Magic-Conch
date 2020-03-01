@@ -14,7 +14,7 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "!세바스찬") {
-    msg.reply("최재혁-24세");
+    msg.reply("최재혁-24세 : 왈-왈");
   }
 });
 
